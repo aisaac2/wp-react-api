@@ -1,0 +1,71 @@
+{
+  "name": "bam-starter-theme",
+  "version": "0.0.1",
+  "description": "<!DOCTYPE html> <html> <head> \t<meta name=\"viewport\" content=\"width=device-width\" /> \t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /> \t<title>WordPress &#8250; ReadMe</title> \t<link rel=\"stylesheet\" href=\"wp-admin/css/install.css?ver=20100228\" type=\"text/css\" /> </head> <body> <h1 id=\"logo\"> \t<a href=\"https://wordpress.org/\"><img alt=\"WordPress\" src=\"wp-admin/images/wordpress-logo.png\" /></a> \t<br /> Version 4.7 </h1> <p style=\"text-align: center\">Semantic Personal Publishing Platform</p>",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline --hot",
+    "dev": "webpack --progress --watch --config webpack.config.js",
+    "clean-prod": "rimraf ./wp-content/themes/YOUR-SITE-FOLDER/build",
+    "production": "npm run clean-prod && cross-env NODE_ENV=production webpack --progress --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=6.10.2"
+  },
+  "author": {
+    "name": "Assaf Isaac"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "alt": "^0.18.6",
+    "animate.css": "^3.5.2",
+    "axios": "^0.16.2",
+    "babel-polyfill": "^6.23.0",
+    "babel-runtime": "^6.23.0",
+    "bourbon": "^4.3.4",
+    "bourbon-neat": "^2.0.0",
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "foundation-sites": "^6.4.3",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1",
+    "url-loader": "^0.5.9"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.3.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^2.0.0",
+    "css-loader": "^0.28.0",
+    "dotenv": "^4.0.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "font-awesome": "^4.7.0",
+    "gsap": "^1.19.1",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "node-sass": "^4.5.2",
+    "normalize.css": "^6.0.0",
+    "postcss-loader": "^1.3.3",
+    "react-hot-loader": "^1.3.1",
+    "rimraf": "^2.6.1",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.6.1",
+    "webpack-dev-middleware": "^1.10.2",
+    "webpack-dev-server": "^2.4.4",
+    "webpack-manifest-plugin": "^1.1.0"
+  }
+}
